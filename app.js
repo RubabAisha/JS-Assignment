@@ -669,14 +669,21 @@ var color=["red", "green", "yellow", "black", "blue", "orange"];
 // var userChoice=prompt("Enter the index number you want to add a color?");
 // var userColor=prompt("Enter the color name you want to add?");
 // userChoice=Number(userChoice);
-// color.splice[userChoice, 0, userColor];
-// alert(color);
+// color.splice(userChoice, 0, userColor);
+// document.write("<h3>Updated Array</h3>")
+// for(var i=0; i < color.length; i++){
+//     document.write(color[i]+"<br>");
+// }
 
 // g)
 // var userChoice=prompt("Enter the index number you want to delete?");
 // var userColor=prompt("Enter the number of colors you want to delete?");
-// color.splice[userChoice, userColor];
-// alert(color);
+// color.splice(userChoice, userColor);
+// document.write("<h3>Updated Array</h3>")
+// for(var i=0; i < color.length; i++){
+//     document.write(color[i]+"<br>");
+// }
+
 
 // TASK10
 // var arr=[320,230,480,120];
