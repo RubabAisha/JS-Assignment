@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- CHAPTER 1 TO 20 -->
+      <!-- MAIN (Center website) -->
+<div class="main">
+
+    <h1>MYLOGO.COM</h1>
+    <hr>
+    
+    <h2>PORTFOLIO</h2>
+    <p>Resize the browser window to see the responsive effect.</p>
+    
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+          <h3>My Work</h3>
+          <p>Lorem ipsum..</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Lights" style="width:100%">
+          <h3>My Work</h3>
+          <p>Lorem ipsum..</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="https://www.w3schools.com/w3images/nature.jpg" alt="Nature" style="width:100%">
+          <h3>My Work</h3>
+          <p>Lorem ipsum..</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+          <h3>My Work</h3>
+          <p>Lorem ipsum..</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="content">
+      <img src="https://www.w3schools.com/w3images/p3.jpg" alt="Bear" style="width:100%">
+      <h3>Some Other Work</h3>
+      <p>Lorem ipsum..</p>
+    </div>
+    
+    <!-- END MAIN -->
+  </div>
+   
+    <!-- Chapter 43-48 EVENTS -->
+
+    <!-- TASK1 -->
+    <a href="#" onclick="alert('This Linked Is Clicked')">Click Me!</a>
+
+    <!-- TASK2 -->
+    <div class="mobile-store">
+    <h3>Mobile Phone LookUp</h3>
+    <img src="images/mobilephone1.jpg" onclick="alert('Thank You for purchasing phone XYZ from us!')"/>
+    <img src="images/mobilephone1.jpg" onclick="alert('Thank You for purchasing phone ABC from us!')"/>
+    <img src="images/mobilephone1.jpg" onclick="alert('Thank You for purchasing phone EFG from us!')"/>
+    <img src="images/mobilephone1.jpg" onclick="alert('Thank You for purchasing phone MNO from us!')"/>
+    </div>
+
+    <!-- TASK3 -->
+    <table>
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th></th>
+        </tr>
+        <tr id="row1">
+            <td>0</td>
+            <td>John</td>
+            <td>10</td>
+            <td><button onclick="del('row1');">Delete</button></td>
+        </tr>
+        <tr id="row2">
+            <td>1</td>
+            <td>Doe</td>
+            <td>9</td>
+            <td><button onclick="del('row2');">Delete</button></td>
+        </tr>
+        <tr id="row3">
+            <td>2</td>
+            <td>Mark</td>
+            <td>10</td>
+            <td><button onclick="del('row3');">Delete</button></td>
+        </tr>
+        <tr id="row4">
+            <td>3</td>
+            <td>James</td>
+            <td>8</td>
+            <td><button onclick="del('row4');">Delete</button></td>
+        </tr>
+    </table>
+
+    <!-- TASK4 -->
+    <img src="images/car1.jpg" width="800" height="500" onMouseover="src='images/car2.jpg'" onMouseout="src='images/car1.jpg'">
+
+    <!-- TASK5 -->   
+    <div class="counter-wrapper"> 
+        <div class="counter" id="counter">0</div> 
+        <button onclick="increase();">Increase</button>
+        <button onclick="decrease();">Decrease</button>
+    </div>
+
+     <!-- Chapter 49-52 EVENTS -->
+
+    <!-- TASK1 -->  
+    <form onSubmit="checkAddress('username','emailID');">
+        Username:
+        <input type="text" id="username">
+        <br>
+        Email:
+        <input type="text" id="emailID">
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- TASK2 -->
+    <p id="slowLoris">
+        Slow lorises are a group of several species of strepsirrhine primates which make up the genus Nycticebus.
+        <a href="javascript:void(0);" onClick="showMore();"><em>Click for more.</em></a>
+    </p>
+
+    <!-- Chapter 58-67 DOM -->
+    <!-- TASK1 -->
+    
+    <!-- <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="content">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" />
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" />
+        <label for="email">Email</label>
+        <input type="text" id="email" />
+        </div>
+        <div id="main-content" class="content">
+        <p class="render"> First Name : Alex</p>
+        <p class="render" id="lastName">Last Name: Bank</p>
+        <p class="render"> Email : alexbank@example.com</p>
+        <p class="render"> Country : Pakistan </p>
+        <p class="render"> contact : +92 300 1234567</p>
+        </div>
+    </div> -->
+
+    <!-- TASK2 -->
+    <!-- <div> <h1> DOM </h1> <div id="form-content" class="content"> <label for="first-name">First Name</label> <input type="text" id="first-name"/> <label for="last-name">Last Name</label> <input type="text" id="last-name"/> <label for="email">Email</label> <input type="text" id="email"/> </div><div id="main-content" class="content"><p class="render"> First Name : Alex</p><p class="render" id="lastName">Last Name: Bank</p><p class="render"> Email : alexbank@example.com</p><p class="render"> Country : Pakistan </p><p class="render"> contact : +92 300 1234567</p></div></div> -->
+   
+        
+</body>
+<script src="app.js"></script>
+</html>
