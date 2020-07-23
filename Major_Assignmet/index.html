@@ -73,7 +73,7 @@
     </div>
 
     <!-- TASK3 -->
-    <table>
+    <!-- <table>
         <tr>
             <th>Index</th>
             <th>Name</th>
@@ -104,35 +104,108 @@
             <td>8</td>
             <td><button onclick="del('row4');">Delete</button></td>
         </tr>
-    </table>
+    </table> -->
 
     <!-- TASK4 -->
     <img src="images/car1.jpg" width="800" height="500" onMouseover="src='images/car2.jpg'" onMouseout="src='images/car1.jpg'">
 
     <!-- TASK5 -->   
-    <div class="counter-wrapper"> 
+    <!-- <div class="counter-wrapper"> 
         <div class="counter" id="counter">0</div> 
         <button onclick="increase();">Increase</button>
         <button onclick="decrease();">Decrease</button>
-    </div>
+    </div> -->
 
      <!-- Chapter 49-52 EVENTS -->
 
     <!-- TASK1 -->  
-    <form onSubmit="checkAddress('username','emailID');">
+    <!-- <form onSubmit="checkAddress('username','emailID');">
         Username:
         <input type="text" id="username">
         <br>
         Email:
         <input type="text" id="emailID">
         <input type="submit" value="Submit">
-    </form>
+    </form> -->
 
     <!-- TASK2 -->
-    <p id="slowLoris">
+    <!-- <p id="slowLoris">
         Slow lorises are a group of several species of strepsirrhine primates which make up the genus Nycticebus.
         <a href="javascript:void(0);" onClick="showMore();"><em>Click for more.</em></a>
+    </p> -->
+
+    <!-- Chapter 52-57  -->
+       <!-- Modal work -->
+       <div id="modal" class="modal">
+        <span class="close" id="modal-close" onclick="onClosedImagModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+    <div id="main" class="main-div">
+        
+    </div>
+    <!-- <h2>Hint:</h2>
+    <p>You can add and remove class like this</p>
+    <p>
+        var modal = document.getElementById('modal');
     </p>
+    <ul>
+        <li>
+            modal.classList.add('modal-open')
+        </li>
+        <li>
+            modal.classList.remove('modal-close');
+        </li>
+    </ul>
+    <hr>
+
+    <ol>
+        <li>
+            Add modal.html style and html codes in your file
+        </li>
+        <li>
+            Create an array of all images paths.
+        </li>
+        <li>
+            Loop through array and display all images in browser using innerHTML.
+        </li>
+        <li>
+            Add onclick function on each image.
+        </li>
+        <li>
+            On image Function definition get modal using id and assign it to a variable,
+            <br> And on that variable
+            <ul>
+                <li>
+                    Add class 'modal-open'
+                </li>
+                <li>
+                    Remove class 'modal-close'
+                </li>
+                <li>
+                    Add style to display block
+                </li>
+                <li>
+                    Assign image path to src
+                </li>
+            </ul>
+        </li>
+        <li>
+
+            On Modal Close Function definition "onClosedImagModal()" get modal using id and assign it to a variable,
+            <br> And on that variable
+            <ul>
+                <li>
+                    Add class 'modal-close'
+                </li>
+                <li>
+                    Remove class 'modal-open'
+                </li>
+                <li>
+                    Set this line in end of function
+                    <br /> setTimeout(()=>{ modal.style.display = "none"; }, 550)
+                </li>
+        </li>
+    </ol> -->
 
     <!-- Chapter 58-67 DOM -->
     <!-- TASK1 -->

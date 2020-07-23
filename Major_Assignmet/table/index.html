@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .form-div {
+    border: 1px solid;
+    margin: 0 auto;
+    width: 25%;
+    }
+    
+    .table-div {
+    margin: 30px auto;
+    width: 25%;
+    }
+
+</style>
+<body>  
+    <div class="form-div">
+            <p>Enter Name</p>
+            <input type="text" name="name" id="names">
+            <p>Enter Class</p>
+            <input type="text" name="classes" id="classI">
+            <p><input type="submit" value="Submit" onClick="callBack()"></p>
+    </div>
+    <div class="table-div">
+        <table border="1px" id="table">
+            <tr>
+                <th>Name</th>
+                <th>Class</th>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
